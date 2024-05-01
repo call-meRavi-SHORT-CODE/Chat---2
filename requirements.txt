@@ -1,0 +1,4 @@
+Flask
+Torch
+nltk
+numpy
