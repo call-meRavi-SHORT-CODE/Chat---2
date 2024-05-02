@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 
 <head>
     <meta charset="UTF-8">
-    <title>Chatbot</title>
+    <title>MeTeller</title>
 </head>
 <body>
 <div class="container">
     <div class="chatbox">
         <div class="chatbox__support">
             <div class="chatbox__header">
-                <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-5--v1.png" alt="image">
-                </div>
+                
                 <div class="chatbox__content--header">
-                    <h4 class="chatbox__heading--header">Chat with Me</h4>
-                    <p class="chatbox__description--header">Are You want to know about me</p>
+                    <h4 class="chatbox__heading--header">MeTeller</h4>
+                    <p class="chatbox__description--header">Do you want to know about me?</p>
                 </div>
             </div>
             <div class="chatbox__messages">
@@ -29,13 +29,14 @@
             </div>
         </div>
         <div class="chatbox__button">
-            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+            <button>Click Here</button>
         </div>
     </div>
 </div>
 
     <script>
-        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+        const SCRIPT_ROOT = JSON.stringify(request.script_root);
+
     </script>
     <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 
