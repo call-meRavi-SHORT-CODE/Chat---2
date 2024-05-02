@@ -12,11 +12,11 @@ body {
 }
 
 *, html {
-    --primaryGradient: linear-gradient(93.12deg, #1B1B20 0.52%, #1B1B20 100%);
-    --secondaryGradient: linear-gradient(268.91deg, #1B1B20 -2.14%, #1B1B20 99.69%);
+    --primaryGradient: linear-gradient(93.12deg, #350582 0.52%, #350582 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #350582 -2.14%, #350582 99.69%);
     --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
-    --primary: #581B98;
+    --primary: #350582;
 }
 
 /* CHATBOX
@@ -24,7 +24,7 @@ body {
 .chatbox {
     position: absolute;
     bottom: 30px;
-    right: 30px;
+    left: 450px;
 }
 
 /* CONTENT IS CLOSE */
@@ -49,7 +49,7 @@ body {
 
 /* BUTTON */
 .chatbox__button {
-    text-align: right;
+    text-align: center;
 }
 
 .send__button {
@@ -118,13 +118,11 @@ body {
     box-shadow: var(--primaryBoxShadow);
 }
 
-.chatbox__image--header {
-    margin-right: 10px;
-}
 
 .chatbox__heading--header {
     font-size: 1.2rem;
     color: white;
+    text-align: center;
 }
 
 .chatbox__description--header {
@@ -188,13 +186,30 @@ body {
 .chatbox__button button,
 .chatbox__button button:focus,
 .chatbox__button button:visited {
-    padding: 10px;
-    background: white;
-    border: none;
-    outline: none;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+    appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
 }
+
+
+
+
