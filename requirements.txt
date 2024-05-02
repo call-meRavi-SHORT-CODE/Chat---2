@@ -2,3 +2,4 @@ Flask
 Torch
 nltk
 numpy
+os
